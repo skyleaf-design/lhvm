@@ -1,0 +1,26 @@
+{
+  "name": "liblhvm",
+  "version": "0.0.1",
+  "description": "A lexer/parser for NumberForth written in cross-platform C.",
+  "main": "liblhvm",
+  "scripts": {
+    "start": "gulp4",
+    "test": "tape tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com:skyleaf-design/liblhvm.git"
+  },
+  "keywords": [
+    "LHVM",
+    "parser",
+    "lexer",
+    "C"
+  ],
+  "author": "Raphael Traviss",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "gulp4": "^4.0.2",
+    "tape": "^4.9.0"
+  }
+}
