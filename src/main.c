@@ -13,7 +13,7 @@ int main(int argc, char *argv[]) {
   }
 
   boing(buffer, 12);
-  printf("%s", buffer);
+  printf("%s\n", buffer);
 }
 
 int boing(char *buf, int str_len ) {
