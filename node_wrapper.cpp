@@ -4,6 +4,9 @@
 
 namespace liblhvm {
 
+// buffer must be string lenght + 2 for null character and newline.
+char buffer[10];
+
 using v8::FunctionCallbackInfo;
 using v8::Isolate;
 using v8::Local;
@@ -16,10 +19,10 @@ void Method(const FunctionCallbackInfo<Value>& args) {
   args.GetReturnValue().Set(String::NewFromUtf8(isolate, "world"));
 }
 
-// NOTE: not actually working yet.
 void BoingWrapper(const FunctionCallbackInfo<Value>& args) {
   Isolate* isolate = args.GetIsolate();
-  args.GetReturnValue().Set(String::NewFromUtf8(isolate, "boing boing"));
+  boing(buffer, 5);
+  args.GetReturnValue().Set(String::NewFromUtf8(isolate, buffer));
 }
 
 void init(Local<Object> exports) {
