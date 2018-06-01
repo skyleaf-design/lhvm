@@ -1,7 +1,7 @@
 {
   "targets": [
     {
-      "target_name": "liblhvm",
+      "target_name": "lhvm",
       "sources": [ "node_wrapper.cpp" ]
     }
   ]
